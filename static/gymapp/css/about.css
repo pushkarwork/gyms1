@@ -1,0 +1,114 @@
+.homePageIntro {
+  /* border: 2px solid white; */
+  height: 40vh;
+  background: url("/static/gymapp/img/dumbel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.705);
+  color: whitesmoke;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homePageIntro > h2 {
+  /* color: rgba(255, 68, 0, 0.849); */
+  font-family: "comforter";
+  font-weight: bold;
+  font-size: 5vmax;
+  letter-spacing: 1vh;
+}
+
+.getTrainng {
+  /* border: 3px solid white; */
+  padding: 5vh 0;
+  display: flex;
+  color: white;
+  flex-wrap: wrap;
+  width: 65vw;
+  margin: auto;
+  font-weight: bold;
+}
+.image {
+  /* border: 5px solid rebeccapurple; */
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.image > img {
+  /* border: 5px solid springgreen; */
+  height: auto;
+  width: 90%;
+}
+
+.getTrainingText {
+  /* border: 3px solid gold; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  padding: 0 2vh;
+}
+.getTrainingText > p {
+  font-style: italic;
+  font-weight: 500;
+}
+.getTrainingText > h4 {
+  font-size: 2.3vmax;
+  font-weight: bold;
+}
+.getTrainingText > button {
+  width: fit-content;
+  color: rgba(255, 68, 0, 0.938);
+  transition: 0.3s;
+  border: none;
+  border-radius: 5%;
+  padding: 0;
+}
+
+.getTrainingText > button:hover {
+  color: wheat;
+  background-color: rgba(255, 68, 0, 0.938);
+  padding: 1vh 1vw;
+}
+
+@media (max-width: 767px) {
+  .getTrainng {
+    /* border: 3px solid white; */
+    padding: 2vh 0;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    flex-wrap: wrap;
+    width: 85vw;
+    margin: auto;
+    font-weight: bold;
+  }
+  .getTrainingText {
+    /* border: 3px solid gold; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  .image {
+    /* border: 5px solid rebeccapurple; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+  }
+  .image > img {
+    /* border: 5px solid springgreen; */
+    height: auto;
+    width: 80%;
+  }
+}

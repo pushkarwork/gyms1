@@ -1,0 +1,89 @@
+{% extends 'base.html' %} 
+{% load static %} 
+
+{% block font %} <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet"> {% endblock font %}
+{% block css %}
+<link rel="stylesheet" href='{% static "gymapp/css/index.css" %}' /> {% endblock css %} 
+{% block title %}Home Page{% endblock title %} 
+{% block body %}
+<div class="container-fluid homePageIntro">
+  <div class="IntroText">
+    {%for Detail in Details%}
+    <h6>FITNESS ELEMENTS</h6>
+    <h1>{{Detail.title}}</h1>
+    <h5>Go Heavy OR Go Home</h5>
+    {%endfor%}
+    <button type="button" id="btn" class="btn btn-outline-secondary">
+      Read More...
+    </button>
+  </div>
+</div>
+<!-- width="80%" height="70%" -->
+<div class="storyAboutUs">
+  <div class="videoBox">
+    <video controls>
+      <source src='{% static "gymapp/img/vid.mp4"%}' type="video/mp4" />
+    </video>
+  </div>
+  <div class="storyAboutUsText">
+    <h3>STORY ABOUT US</h3>
+    <br />
+    <p>
+      Lorem ipsum proin gravida nibh vel velit auctor aliquet. Aenean pretium
+      sollicitudin, nascetur auci elit consequat ipsutissem niuis sed odio sit
+      amet nibh vulputate cursus a amet.
+    </p>
+    <p>
+      Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, gravida
+      quam semper libero sit amet. Etiam rhoncus. Maecenas tempus, tellus eget
+      condimentum rhoncus, gravida quam semper libero sit amet.
+    </p>
+    <br />
+    <button type="button" id="btn" class="btn btn-outline-secondary">
+      Read More...
+    </button>
+  </div>
+</div>
+<div class="strategiesMainDiv">
+  <div class="strategiesImage">
+    <img src='{% static "gymapp/img/dead.jpg"%}' alt="" />
+  </div>
+  <!-- deadlift side text -->
+  <div class="strategiesText">
+    <div class="strategiesSubText">
+      <p><i class="material-icons"> arrow_circle_right </i></p>
+      <h5>Strategies</h5>
+      <p>
+        Aenean massa. Cum sociis Theme et natoque penatibus et magnis dis part
+        urient montes.
+      </p>
+    </div>
+    <div class="strategiesSubText">
+      <p><i class="material-icons"> fitness_center </i></p>
+      <h5>Yoga</h5>
+      <p>
+        Aenean massa. Cum sociis Theme et natoque penatibus et magnis dis part
+        urient montes.
+      </p>
+    </div>
+    <div class="strategiesSubText">
+      <p><i class="material-icons"> local_florist </i></p>
+      <h5>Workout</h5>
+      <p>
+        Aenean massa. Cum sociis Theme et natoque penatibus et magnis dis part
+        urient montes.
+      </p>
+    </div>
+    <div class="strategiesSubText">
+      <p><i class="material-icons"> monitor_weight </i></p>
+      <h5>Weight Loss</h5>
+      <p>
+        Aenean massa. Cum sociis Theme et natoque penatibus et magnis dis part
+        urient montes.
+      </p>
+    </div>
+  </div>
+</div>
+
+{% endblock body %}

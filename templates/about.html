@@ -1,0 +1,30 @@
+{% extends 'base.html' %} 
+{% load static %} 
+
+{% block font %} <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet"> {% endblock font %}
+{% block css %}
+<link rel="stylesheet" href='{% static "gymapp/css/base.css" %}' />
+<link rel="stylesheet" href='{% static "gymapp/css/about.css" %}' />  {% endblock css %} 
+{% block title %}about Us Page{% endblock title %} 
+{% block body %}
+<div class="container-fluid homePageIntro" id="homePageIntroAbout">
+    <h2>About Us</h2>
+</div>
+<div class="getTrainng">
+  
+  <div class="getTrainingText">
+    <br>
+    <h4>GET TRAINING TODAY</h4>
+    <br>
+    <p>Gimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard.</p>
+    
+    <button type="button" id="btn" class="btn btn-outline-secondary">Contact Now</button>
+    
+  </div>
+  <div class="image">
+    <img src='{% static "gymapp/img/train.png"%}' alt="">
+  </div>
+</div>
+
+{% endblock body %}

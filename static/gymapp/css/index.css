@@ -1,0 +1,338 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black !important;
+}
+
+.homePageIntro {
+  /* border: 2px solid white; */
+  height: 110vh;
+  background: url("/static/gymapp/img/dumbel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.705);
+  color: whitesmoke;
+  position: relative;
+}
+
+.IntroText {
+  /* border: 3px solid orange; */
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  left: 15vw;
+  position: absolute;
+  top: 55vh;
+  height: 30vh;
+  justify-content: space-around;
+}
+
+.IntroText > h6 {
+  color: rgba(255, 68, 0, 0.938);
+  font-weight: bolder;
+  word-spacing: 0.3vmax;
+  letter-spacing: 0.2vmax;
+  font-style: oblique;
+}
+
+.IntroText > h1 {
+  font-weight: bold;
+  letter-spacing: 0.1vmin;
+}
+
+#btn {
+  width: fit-content;
+  color: rgba(255, 68, 0, 0.938);
+}
+
+@media (max-width: 767px) {
+  .IntroText {
+    /* border: 3px solid orange; */
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    left: 5vw;
+    position: absolute;
+    top: 60vh;
+    height: 30vh;
+    justify-content: space-around;
+  }
+}
+
+/* storyAboutUs */
+
+.storyAboutUs {
+  /* border: 5px solid red; */
+  width: 100%;
+  padding: 2% 2%;
+  height: 80vh;
+  background-color: rgba(255, 245, 238, 0.89);
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.videoBox {
+  /* border: 5px solid rgb(202, 150, 52); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/2;
+}
+
+.videoBox > video {
+  width: 492px;
+  height: 300px;
+  border-radius: 10%;
+}
+.storyAboutUsText {
+  /* border: 5px solid black; */
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 5vmax 0 2vmax;
+}
+.storyAboutUsText > h3 {
+  /* padding: 2vh 0; */
+  margin: 12vh 0 0 0;
+  font-size: 3vmax;
+  font-weight: bolder;
+  letter-spacing: 0.2vmax;
+}
+
+@media (max-width: 1023px) {
+  .storyAboutUs {
+    /* border: 5px solid red; */
+    width: 100%;
+    padding: 2% 2%;
+    height: auto;
+    background-color: rgba(255, 245, 238, 0.89);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-bottom: 2vh;
+  }
+  .storyAboutUsText {
+    /* border: 5px solid black; */
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .storyAboutUsText > h3 {
+    /* padding: 2vh 0; */
+    margin: 0 0 0 0;
+    font-size: 2.5vmax;
+    font-weight: bolder;
+    letter-spacing: 0.2vmax;
+  }
+}
+
+@media (max-width: 767px) {
+  .storyAboutUs {
+    /* border: 5px solid red; */
+    width: 100%;
+    padding: 2% 2%;
+    height: auto;
+    background-color: rgba(255, 245, 238, 0.89);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4vh;
+  }
+  .storyAboutUsText,
+  .videoBox {
+    padding-top: 5vmax;
+  }
+}
+
+.strategiesMainDiv {
+  width: 100%;
+  /* border: 5px solid red; */
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.strategiesImage {
+  /* border: 5px solid orange; */
+  /* width: 50%; */
+  grid-column: 1/2;
+}
+.strategiesImage > img {
+  width: 100%;
+  height: 100%;
+}
+
+.strategiesText {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  background-color: rgb(22 21 21);
+}
+
+.strategiesSubText {
+  /* border: 1px solid white; */
+  /* font-weight: 500; */
+  color: rgb(238, 238, 224);
+  padding: 1vmax 3vmax;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.strategiesSubText > h5 {
+  font-weight: bold;
+}
+.material-icons {
+  font-size: 3.2vmax !important;
+  color: rgba(255, 68, 0, 0.849);
+}
+
+@media (max-width: 767px) {
+  .strategiesMainDiv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 539px) {
+  .strategiesText {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .strategiesSubText {
+    padding: 2vh 2vh;
+  }
+  .strategiesSubText > p {
+    margin-bottom: 0 !important;
+  }
+}
+
+footer {
+  /* border: 5px solid white; */
+  /* height: 60vh; */
+  color: beige;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 3vh 0;
+}
+
+.footerTop {
+  /* border: 3px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.contactDetailsFooter {
+  /* border: 5px solid greenyellow; */
+  width: auto;
+}
+
+.contactDetailsFooter > h6 {
+  color: rgba(255, 68, 0, 0.849);
+  width: fit-content;
+  transition: 0.3s;
+}
+.contactDetailsFooter > h6:hover {
+  background-color: rgba(255, 68, 0, 0.849);
+  color: wheat;
+}
+
+.footerTitile {
+  font-size: 5vmax;
+  /* border: 5px solid gold; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: "Comforter", cursive;
+  color: rgba(255, 68, 0, 0.849);
+}
+
+.copyright {
+  /* border: 3px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 0;
+}
+.copyright > p {
+  width: 70vw;
+  /* border: 5px solid white; */
+}
+.accountLinks {
+  /* border: 5px solid fuchsia; */
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  margin-left: auto;
+  /* padding: 0 5vw; */
+  width: 20vw;
+  justify-content: space-evenly;
+}
+.accountLinks > a {
+  /* border: 1px solid white; */
+  border-radius: 20%;
+  padding: 0 1vmax;
+  font-size: 1.4vmax;
+  font-weight: bold;
+  text-decoration: none;
+  color: beige;
+  transition: 0.5s;
+}
+
+.accountLinks > a:hover {
+  background-color: aliceblue;
+  color: rgba(255, 68, 0, 0.849);
+}
+
+@media (min-width: 501px) and (max-width: 600px) {
+  .footerTop {
+    /* border: 3px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .contactDetailsFooter {
+    /* border: 5px solid greenyellow; */
+    /* width: auto; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .footerTop {
+    /* border: 3px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 2vw;
+  }
+  .contactDetailsFooter {
+    /* border: 5px solid greenyellow; */
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  footer {
+    /* border: 5px solid white; */
+    /* height: 60vh; */
+    color: beige;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1vh 0;
+  }
+}

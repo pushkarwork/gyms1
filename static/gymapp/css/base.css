@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black !important;
+}
+
+footer {
+  /* border: 5px solid white; */
+  /* height: 60vh; */
+  color: beige;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 3vh 0;
+}
+
+.footerTop {
+  /* border: 3px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.contactDetailsFooter {
+  /* border: 5px solid greenyellow; */
+  width: auto;
+}
+
+.contactDetailsFooter > h6 {
+  color: rgba(255, 68, 0, 0.849);
+  width: fit-content;
+  transition: 0.3s;
+}
+.contactDetailsFooter > h6:hover {
+  background-color: rgba(255, 68, 0, 0.849);
+  color: wheat;
+}
+
+.footerTitile {
+  font-size: 5vmax;
+  /* border: 5px solid gold; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: "Comforter", cursive;
+  color: rgba(255, 68, 0, 0.849);
+}
+
+.copyright {
+  /* border: 3px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 0;
+}
+.copyright > p {
+  width: 70vw;
+  /* border: 5px solid white; */
+}
+.accountLinks {
+  /* border: 5px solid fuchsia; */
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  margin-left: auto;
+  /* padding: 0 5vw; */
+  width: 20vw;
+  justify-content: space-evenly;
+}
+.accountLinks > a {
+  /* border: 1px solid white; */
+  border-radius: 20%;
+  padding: 0 1vmax;
+  font-size: 1.4vmax;
+  font-weight: bold;
+  text-decoration: none;
+  color: beige;
+  transition: 0.5s;
+}
+
+.accountLinks > a:hover {
+  background-color: aliceblue;
+  color: rgba(255, 68, 0, 0.849);
+}
+
+@media (min-width: 501px) and (max-width: 600px) {
+  .footerTop {
+    /* border: 3px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .contactDetailsFooter {
+    /* border: 5px solid greenyellow; */
+    /* width: auto; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .footerTop {
+    /* border: 3px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 2vw;
+  }
+  .contactDetailsFooter {
+    /* border: 5px solid greenyellow; */
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  footer {
+    /* border: 5px solid white; */
+    /* height: 60vh; */
+    color: beige;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1vh 0;
+  }
+}
